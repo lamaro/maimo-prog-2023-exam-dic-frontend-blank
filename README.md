@@ -61,6 +61,8 @@ Maquetar y estilar los archivos dados de manera que el sitio tenga integridad vi
 ## Importante
 - No está permitido el uso de ChatGPT, Copilot o similares. Esta permitido el uso de documentación propia del alumno y búquedas en Internet.
 - No utilizar las flechas del navegador
+- Utilizar ESLint y cada archivo formateado.
+- No dejar console logs, warnings o errores en la consola.
 
 
 
