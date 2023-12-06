@@ -3,7 +3,7 @@ Profesor: Lic. Leandro Amaro García.
 
 ## Consigna
 
-El proyecto consiste en el armado de una Trivia (encuesta), obteniendo las preguntas y sus respuestas desde el backend. Cada pregunta esta asociada un `step` de la trivia, al terminar la trivia el usuario es redirigido al resumen, mostrando para cada pregunta, si la respuesta elegida es correcta o no.
+El proyecto consiste en el armado de una Trivia (encuesta), obteniendo las preguntas y sus respuestas desde el backend. Cada pregunta esta asociada a un `step` de la trivia, al terminar la trivia el usuario es redirigido al resumen, mostrando para cada pregunta, si la respuesta elegida es correcta o no.
 
 Utilizar como BASE_URL: 
 
