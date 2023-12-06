@@ -5,7 +5,7 @@ const Answer = ({ data }) => {
 
   return (
     <div>
-      <button onClick={() => handleSetAnswer(data)}>{data.title}</button>
+      <button>titulo</button>
     </div>
   );
 };
