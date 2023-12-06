@@ -15,28 +15,28 @@ Utilizar como BASE_URL:
 a) Completar las funciones `getQuestions` y `getAnsewers(questionId: string)`
 Las mismas serán utilizadas para obtener las questions generales y las answers de cada cuestion cuando se requiera. Utilizar try/catch y axios.get()
 
-- `getQuestions` guarda en el state questions. Además inicializar el state userAnswers agregando luego de la llamada de axios el siguiente código: ` setUserAnswers(
+- `getQuestions` (endpoint /questions). Guarda en el state **questions**. Además inicializar el state **userAnswers** agregando luego de la llamada de axios el siguiente código: ` setUserAnswers(
         response.data.questions.map((item) => {
           return { title: 'No answer' };
         })
       ); `
 
 
-- `getAnswers` guarda en el state actualQuestionAnswers. Dado un questionId, obtiene las aswers correspondientes a esa question.
+- `getAnswers` (endpoint /questions/[id]). Guarda en el state **actualQuestionAnswers**. Dado un questionId, obtiene las aswers correspondientes a esa question.
 
 Utilizar el seteo de loadings e inicializar los states antes de cada llamada de axios.
 
 
 b) Completar las funciones `handleSetAnswer` y `handleResume` (Luego de avanzar con punto 2)
 
-- `handleSetAnswer` utiliza la funcion `insertInArray` en src/utils para guardar la respuesta en la posicion correcta del array (state) userAnswers. La función `insertInArray` devuelve un array que debe ser almacenado mediante setUserAnswers.
+- `handleSetAnswer` utiliza la funcion `insertInArray` en src/utils para guardar la respuesta en la posicion correcta del array (state) **userAnswers**. La función `insertInArray` devuelve un array que debe ser almacenado mediante setUserAnswers.
 
-- `handleResume` retorna un array con objetos de la siguiente forma: `{ question, answer }`. Utilizar map(item, index) para recorrer el state questions, encontrando cada answer de la siguiente forma: `answer: userAnswers[index]`
+- `handleResume` retorna un array con objetos de la siguiente forma: `{ question, answer }`. Utilizar map(item, index) para recorrer el state **questions**, encontrando cada answer de la siguiente forma: `answer: userAnswers[index]`
 
 ### 2) containers/QuestionContainer (2 puntos)
 - Utilizar questionData para mostrar el title y category de cada question
 - Recorrer actualQuestionAnswers con map para mostrar el componente Answer, pasandole en la propiedad data el objeto de la answer.
-- Completar la lógica del boton de Next Question. Si el state step es menor o igual a (questions.lenght - 1), handleSetStep deber recibir `resume` sino `next`. Para el label del boton debe decir `Go to resume` o `Next Question`. Utilizar if ternario.
+- Completar la lógica del boton de Next Question. Si el state **step** es menor o igual a (questions.lenght - 1), handleSetStep deber recibir `resume` sino `next`. Para el label del boton debe decir `Go to resume` o `Next Question`. Utilizar if ternario.
 
 ### 3) components/Answer (1.5 puntos)
 - Modificar el componente Answer para que obtenga del context la función handleSetAnswer y mediante el onClick del boton envie la data recibida por props.
