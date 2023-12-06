@@ -64,6 +64,10 @@ Maquetar y estilar los archivos dados de manera que el sitio tenga integridad vi
 - Utilizar ESLint y cada archivo formateado.
 - No dejar console logs, warnings o errores en la consola.
 
+## Entrega
+- Borrar la carpeta node modules
+- Enviar un zip del proyecto via Slack
+
 
 
 ## Getting Started
