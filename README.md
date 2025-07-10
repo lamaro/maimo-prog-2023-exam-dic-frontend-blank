@@ -1,4 +1,4 @@
-# Examen final Programación 3 - Diciembre/2023
+# Examen final Programación 3 - Julio 2025
 Profesor: Lic. Leandro Amaro García.
 
 ## Consigna
